@@ -1,324 +1,138 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Vasil Nenov</title>
+<link rel="shortcut icon" type="image/jpg" href="./images/V.jpg"/>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: "Raleway", sans-serif
-  }
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
 </style>
+</head>
+<body>
 
-<body class="w3-light-grey">
-
-  <!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-  <div class="w3-content" style="max-width:1400px">
-
-    <!-- Header -->
-    <header class="w3-container w3-center w3-padding-32">
-      <h1><b></b>Hi, my name is Vasil</h1>
-      <!-- in the space following w3-tag and inbetween >< you can insert a word that will be white on black background-->
-      <p>Thank you for coming to my <span class="w3-tag">page</span></p>
-    </header>
-
-
-    <!-- Grid -->
-    <div class="w3-row">
-
-      <!-- Blog entries -->
-      <div class="w3-col l8 s12">
-        <!-- Blog entry -->
-        <div class="w3-card-4 w3-margin w3-white">
-          <!-- <img src="./images/balloon.jpg" alt="Nature" style="width:100%"> -->
-          <div class="w3-container">
-            <h3><b>FEATURED PROJECT</b></h3>
-            <h5>Chicago Graffiti Removal Tracking Tool
-              <!-- <span class="w3-opacity"> Optional Date and Time Input Here</span></h5> -->
-          </div>
-
-          <div class="w3-container">
-            <p>
-              <img src="./images/chicago.jpg" style="max-width:100%;height:auto;">
-            </p>
-
-            <div class="w3-row">
-              <div class="">
-                <!--w3-col m8 s12-->
-                <h4><b>Project Purpose</b></h4>
-                <p>Each day the City of Chicago receives graffiti removal requests. These requests are input and tracked
-                  through their 311 reporting system.
-                  This project explores the data from the 311 Service Requests and will observe trends as well as tell a
-                  story through data visualization.
-
-                
-          
-                </p>
-
-                <h4><b>Process and Results</b></h4>
-                Utilizing Jupyter Lab to clean the data that was collected from the City of Chicago database my team and
-                I then turned to SQL and Leaftlet,
-                D3.js and HTML/CSS to visualize the data and spot trends and which areas had the biggest graffiti
-                problems.
-                <img src="./images/line_plot.png" style="max-width:100%;height:auto;">
-                <p>
-                The above line plot outlines the trend that majority of reported graffiti grievences were issued to the
-                city at the beginning of the week, typically on a Monday or Tuesday.
-
-                Using the Leaflet library, we were able to plot each 311 requests for graffiti removal and visualize the
-                outcomes in a cluster and a heatmap.
-                </p>
-
-                <p>
-                  <b>Interactive Heatmap showing distribution of graffiti reports</b>
-                  <img src="./images/heat_map2.png" style="max-width:100%;height:auto;">
-                </p>
-
-                <p>
-                  <b>Interactive Clustermap distribution of graffiti reports</b>
-                  <img src="./images/cluster_map2.png" style="max-width:100%;height:auto;">
-
-                </p>
-
-                <p>
-                  <b>Interactive Dashboard allowing you to search graffiti removal requests in any zip code in Chicago
-                  </b>
-                  <img src="./images/table2.png" style="max-width:100%;height:auto;">
-                </p>
-
-
-                <p>
-                <h8>* Although I would love to host a live version of this project online and through GitHub I am unable to do so at the moment
-                  due to the risk of exposing private API Keys to the google machine and running the risk of incurring usage fees
-                </h8></p>
-
-
-
-
-
-
-                <!-- <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p> -->
-
-
-              </div>
-              <div class="w3-col m4 w3-hide-small">
-                <p><span class="w3-padding-large w3-right"><b></b> <span class="w3-tag"> </span></span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-
-        <!-- entry -->
-        <!-- <div class="w3-card-4 w3-margin w3-white">
-  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
-    <div class="w3-container">
-      <h3><b>RESUME</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Vasil Nenov</a>
+     <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="./images/onlineresume.pdf" class="w3-bar-item w3-button">Resume</a>
+      <a href="https://www.linkedin.com/in/vasilnenov/" class="w3-bar-item w3-button">LinkedIn</a>
+      <a href="https://github.com/vgnenov" class="w3-bar-item w3-button">Github</a>
     </div>
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Header -->
+ <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class=" =" " alt=" " width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xlarge">Hi! My name is Vasil</h1>
+    <p>Thank you for coming to my <span class="w3-tag">page</span></p>
+      <h2 
+     div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./images/aboutme.jpg" class="w3-round w3-image " alt="Table Setting" width="600" height="750">
     </div>
-  </div> -->
 
-       
-        <!-- END BLOG ENTRIES -->
-      </div>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">That's Me!</h1>
+      <h5 class="w3-center"><p>Thank you for coming to my <span class="w3-tag">page</span>   </p>  </h5><br>
+      <p class="w3-large">I started becoming more involved with Data Science after starting my own business in Denver, Colorado. I love taking deep dives into data and figuring out how and why things work, finding hidden links and associations between different sets of data and ultimately creating solutions to complex problems.</p><br>
+      <p class="w3-large w3-text-grey w3-hide-medium">In my spare time you might find me under the hood of a car, riding my bike around the city, trying out new food, or practising taking photos with my Nikon DSLR. I am always working on something exciting! </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="Projects">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Featured Projects</h1><br>
 
-      <!-- Introduction menu -->
-      <div class="w3-col l4">
-        <!-- About Card -->
-        <div class="w3-card w3-margin w3-margin-top">
-          <img src="./images/aboutme2.jpg" style="max-width:100%;height:auto;">
-          <div class="w3-container w3-white">
-            <h4><b>Thats me!</b></h4>
-          <!-- <p>I am an aspiring Data Analyst with a focus on Database Management, Business Intelligence and Strategy.</p> -->
-
-            <p>I started becoming more involved with Data Science after starting my own business in Denver, Colorado.
-              I love taking deep dives into data and figuring out how and why things work, finding hidden links and
-              associations
-              between different sets of data and ultimately creating solutions to complex problems.</p>
-            <p>In my spare time you might find me under the hood of a car, riding my bike around the city, trying out new food, or practising taking photos with my 
-              Nikon DSLR.  I am always working on something exciting!
-            </p>
-          </div>
-        </div>
-        <hr>
-
-        <!-- Posts -->
-        <div class="w3-card w3-margin">
-          <div class="w3-container w3-padding">
-            <h4>Featured Projects</h4>
-          </div>
-          <ul class="w3-ul w3-hoverable w3-white">
-
-            <li class="w3-padding-16">
-              <img src="./images/ufo.jpg"  alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large"><a href="https://vgnenov.github.io/Javascript-Challenge/" target="_blank">UFO
-                  Visitor Dashboard</a></span><br>
-              <span>
-                <p>
-                  Create a dynamic table based upon UFO sighting dataset that will enable users to search and
-                  filter the table data for specific values.
-                </p>
-              </span>
-            </li>
-
-            <li class="w3-padding-16">
-              <img src="./images/bacteria.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large"><a href="https://vgnenov.github.io/Belly-Button-Biodiversity/"
-                  target="_blank">Belly Button Biodiversity Interactive Dashboard</a></span><br>
-              <span>
-                <p>
-                  Building interactive dashboard to explore Belly Button Biodiversity, which catalogs the microbes that
-                  colonize the human navel.
-                  A dynamic dashboard that updates all charts and graphs when a new sample is selected.
-                  <a href="https://raw.githubusercontent.com/vgnenov/Webpage-Testing-Repo/main/images/BBBio.gif"
-                    target="_blank">Video Demo</a>
-                </p>
-              </span>
-            </li>
-
-            <li class="w3-padding-16">
-              <img src="./images/cloud.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large"><a href="https://vgnenov.github.io/Web-Design-Challenge-2/" target="_blank">Weather
-                  Web Design Challenge</a></span><br>
-              <span>
-
-                <p>Creating a visualization dashboard website plotting weather data with Python and OpenWeatherAPI of
-                  over 500 cities showing how
-                  weather changes depending on latitude, including a responsive data table.
-                </p>
-
-              </span>
-            </li>
-
-          </ul>
-        </div>
-        <hr>
-
-        <!-- Labels / tags -->
-        <div class="w3-card w3-margin">
-          <div class="w3-container w3-padding">
-            <h4>Featured Technologies</h4>
-          </div>
-          <div class="w3-container w3-white">
-            <p>
-              <span class="w3-tag w3-black w3-margin-bottom"><a href="https://www.python.org/"
-                  target="_blank">Python</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://numpy.org/"
-                  target="_blank">NumPy</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://pandas.pydata.org/"
-                  target="_blank">Pandas</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://matplotlib.org/"
-                  target="_blank">MatplotLib</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://www.mysql.com/"
-                  target="_blank">MySQL</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://www.mongodb.com/"
-                  target="_blank">MongoDB</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a
-                  href="https://en.wikipedia.org/wiki/Extract,_transform,_load#:~:text=In%20computing%2C%20extract%2C%20transform%2C,than%20the%20source(s)."
-                  target="_blank">ETL</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://html.com/"
-                  target="_blank">HTML</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a
-                  href="https://en.wikipedia.org/wiki/Bootstrapping" target="_blank">Bootstrap</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://d3js.org/"
-                  target="_blank">D3.js</a></span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://www.tableau.com/"
-                  target="_blank">Tableau</a></span>
-
-            </p>
-          </div>
-
-        </div>
-
-        <div class="w3-card w3-margin">
-          <div class="w3-container w3-padding">
-            <h4>Get In Touch</h4>
-          </div>
-          <ul class="w3-ul w3-hoverable w3-white">
-
-            <li class="w3-padding-16">
-              <img src="./images/resthumb2.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large"><a href="./images/onlineresume.pdf" target="_blank">Resume</a></span><br>
-              <span>
-                <p>
-                  
-                </p>
-              </span>
-            </li>
-
-            <li class="w3-padding-16">
-              <img src="./images/linkedin2.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large"><a href="https://www.linkedin.com/in/vasilnenov/"
-                  target="_blank">LinkedIn</a></span><br>
-              <span>
-                <p>
-                 
-                </p>
-              </span>
-            </li>
-
-            <li class="w3-padding-16">
-              <img src="./images/git2.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large"><a href="https://github.com/vgnenov" target="_blank">GitHub</a></span><br>
-              <span>
-
-                <p>
-                </p>
-
-              </span>
-            </li>
-
-          </ul>
-        </div>
-
-
-
-
-
-        <!-- END Introduction Menu -->
-      </div>
-
-      <!-- END GRID -->
-    </div><br>
-
-    <!-- END w3-content -->
+      <h4><span class="w3-large"><a href="https://vgnenov.github.io/Javascript-Challenge/" target="_blank">UFO Visitor Dashboard</a></h4>
+      <p class="w3-text-grey">Dynamic table based upon UFO sighting dataset that will enable users to search and
+        filter the table data for specific values</p><br>
+    
+      <h4><span class="w3-large"><a href="https://vgnenov.github.io/Belly-Button-Biodiversity/"
+        target="_blank">Belly Button Biodiversity Interactive Dashboard</a></h4>
+      <p class="w3-text-grey">Building interactive dashboard to explore Belly Button Biodiversity, which catalogs the microbes that
+        colonize the human navel.
+        A dynamic dashboard that updates all charts and graphs when a new sample is selected.<a href="https://raw.githubusercontent.com/vgnenov/Webpage-Testing-Repo/main/images/BBBio.gif"
+        target="_blank">Video Demo</a></p><br>
+    
+      <h4><a href="https://vgnenov.github.io/Web-Design-Challenge-2/" target="_blank">Weather Web Design Challenge</a></h4>
+      <p class="w3-text-grey">Creating a visualization dashboard website plotting weather data with Python and OpenWeatherAPI of
+        over 500 cities showing how weather changes depending on latitude, including a responsive data table</p><br>   
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./images/Octocat.png" class="w3-round w3-image w3-opacity-min" alt="Projects" style="width:100%">
+    </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <hr>
 
-    <!-- The below is code for "Previous" and "Next" buttons - could be useful in clicking through an About Me, Featured Projects etc
-    pages if they were to be set up in the future
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button> -->
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Featured Technologies</h1><br>
+    <p></p>
+    <p class="w3-text-blue-grey w3-large"><b></b></p>
+    <span class="w3-tag w3-black w3-margin-bottom"><a href="https://www.python.org/"
+      target="_blank">Python</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://numpy.org/"
+      target="_blank">NumPy</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://pandas.pydata.org/"
+      target="_blank">Pandas</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://matplotlib.org/"
+      target="_blank">MatplotLib</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://www.mysql.com/"
+      target="_blank">MySQL</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://www.mongodb.com/"
+      target="_blank">MongoDB</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a
+      href="https://en.wikipedia.org/wiki/Extract,_transform,_load#:~:text=In%20computing%2C%20extract%2C%20transform%2C,than%20the%20source(s)."
+      target="_blank">ETL</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://html.com/"
+      target="_blank">HTML</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a
+      href="https://en.wikipedia.org/wiki/Bootstrapping" target="_blank">Bootstrap</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://d3js.org/"
+      target="_blank">D3.js</a></span>
+    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"><a href="https://www.tableau.com/"
+      target="_blank">Tableau</a></span>
+    <!-- <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p> -->
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form> -->
+  </div>
+  
+<!-- End page content -->
+</div>
 
-    <p>Powered by Determination and 
-      <a href="https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance?language=en" 
-       target="_blank">Grit</a> 
-      </p>
-       <!-- if you are reading this the good stuff in the video starts at 2:40 but the entire video is worth a watch.   -->
-  </footer>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by Determination and 
+    <a href="https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance?language=en" 
+     target="_blank">Grit</a> </p>
+</footer>
 
 </body>
-
 </html>
